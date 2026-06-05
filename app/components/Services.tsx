@@ -15,6 +15,8 @@ export default function Services() {
         "Hip Pain",
         "Knee Pain",
         "Frozen Shoulder",
+        "Arthritis Management",
+        "Post-Fracture Recovery",
       ],
     },
     {
@@ -28,18 +30,21 @@ export default function Services() {
         "GBS",
         "Hemiplegia",
         "Paraplegia",
+        "Balance Training",
+        "Gait Re-education",
       ],
     },
     {
-      icon: "👶",
-      title: "Pediatric Physiotherapy",
-      subtitle: "Supporting growth and developmental milestones.",
+      icon: "👩",
+      title: "Women's Health & Postpartum Care",
+      subtitle: "Supporting recovery, strength and confidence after childbirth.",
       conditions: [
-        "Delayed Milestones",
-        "ADHD",
-        "Postural Correction",
-        "Balance Training",
-        "Motor Development",
+        "Postpartum Recovery",
+        "Diastasis Recti",
+        "Pelvic Floor Rehabilitation",
+        "Core Strength Restoration",
+        "Post-Cesarean Recovery",
+        "Pregnancy Related Pain",
       ],
     },
     {
@@ -51,6 +56,8 @@ export default function Services() {
         "TKR Recovery",
         "THR Recovery",
         "Fracture Rehabilitation",
+        "Spinal Surgery Recovery",
+        "Shoulder Surgery Recovery",
       ],
     },
     {
@@ -61,16 +68,33 @@ export default function Services() {
         "Sports Injuries",
         "Muscle Strains",
         "Ligament Injuries",
+        "ACL Rehabilitation",
         "Performance Recovery",
+        "Injury Prevention",
       ],
     },
     {
-      icon: "✨",
-      title: "Specialized Therapies",
-      subtitle: "Advanced techniques for faster recovery.",
+      icon: "❤️",
+      title: "Cardio-Pulmonary Rehabilitation",
+      subtitle: "Improving endurance, breathing and functional capacity.",
       conditions: [
+        "Cardiac Rehabilitation",
+        "Post Heart Surgery Recovery",
+        "Pulmonary Rehabilitation",
+        "COPD Support",
+        "Breathing Exercises",
+        "Endurance Conditioning",
+      ],
+    },
+    {
+      icon: "💧",
+      title: "Hydrotherapy & Advanced Therapies",
+      subtitle: "Evidence-based treatments for faster recovery.",
+      conditions: [
+        "Hydrotherapy",
         "Dry Needling",
         "Cupping Therapy",
+        "Electrotherapy",
         "Exercise Therapy",
         "Strength Training",
       ],
@@ -152,17 +176,11 @@ export default function Services() {
                 shadow-[0_0_50px_rgba(255,215,0,0.08)]
               "
             >
-              {/* TOP GOLD BAR */}
-
               <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300" />
-
-              {/* ICON */}
 
               <div className="text-5xl mb-6">
                 {service.icon}
               </div>
-
-              {/* TITLE */}
 
               <h3 className="text-white text-2xl font-bold">
                 {service.title}
@@ -171,8 +189,6 @@ export default function Services() {
               <p className="text-gray-400 mt-4">
                 {service.subtitle}
               </p>
-
-              {/* CONDITIONS */}
 
               <div className="mt-8 space-y-3">
 
@@ -192,8 +208,6 @@ export default function Services() {
                 ))}
 
               </div>
-
-              {/* GLOW */}
 
               <div
                 className="
