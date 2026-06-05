@@ -5,7 +5,7 @@ import { Points, PointMaterial } from "@react-three/drei";
 import { useMemo, useRef } from "react";
 
 function Stars() {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
 
   const positions = useMemo(() => {
     const particles = new Float32Array(12000 * 3);
