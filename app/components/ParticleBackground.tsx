@@ -19,11 +19,11 @@ function Stars() {
     return particles;
   }, []);
 
-  useFrame((state, delta) => {
-    if (ref.current) {
-      ref.current.rotation.y += delta * 0.03;
-      ref.current.rotation.x += delta * 0.01;
-    }
+  useFrame((_, delta) => {
+    if (!ref.current) return;
+
+    ref.current.rotation.y += delta * 0.03;
+    ref.current.rotation.x += delta * 0.01;
   });
 
   return (
