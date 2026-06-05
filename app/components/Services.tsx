@@ -17,6 +17,8 @@ export default function Services() {
         "Frozen Shoulder",
         "Arthritis Management",
         "Post-Fracture Recovery",
+        "Torticollis",
+        "CTEV",
       ],
     },
     {
@@ -32,12 +34,30 @@ export default function Services() {
         "Paraplegia",
         "Balance Training",
         "Gait Re-education",
+        "Bell's Palsy",
+      ],
+    },
+    {
+      icon: "👶",
+      title: "Pediatric Physiotherapy",
+      subtitle:
+        "Supporting children in achieving optimal movement, development and independence.",
+      conditions: [
+        "Cerebral Palsy",
+        "Down Syndrome",
+        "Erb's Palsy",
+        "Club Foot",
+        "Facial Palsy",
+        "Delayed Milestones",
+        "Autism Spectrum Disorder",
+        "Developmental Delay",
       ],
     },
     {
       icon: "👩",
       title: "Women's Health & Postpartum Care",
-      subtitle: "Supporting recovery, strength and confidence after childbirth.",
+      subtitle:
+        "Supporting recovery, strength and confidence after childbirth.",
       conditions: [
         "Postpartum Recovery",
         "Diastasis Recti",
@@ -76,7 +96,8 @@ export default function Services() {
     {
       icon: "❤️",
       title: "Cardio-Pulmonary Rehabilitation",
-      subtitle: "Improving endurance, breathing and functional capacity.",
+      subtitle:
+        "Improving endurance, breathing and functional capacity.",
       conditions: [
         "Cardiac Rehabilitation",
         "Post Heart Surgery Recovery",
@@ -89,7 +110,8 @@ export default function Services() {
     {
       icon: "💧",
       title: "Hydrotherapy & Advanced Therapies",
-      subtitle: "Evidence-based treatments for faster recovery.",
+      subtitle:
+        "Evidence-based treatments for faster recovery.",
       conditions: [
         "Hydrotherapy",
         "Dry Needling",
@@ -115,7 +137,6 @@ export default function Services() {
       {/* HEADER */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -142,9 +163,7 @@ export default function Services() {
         {/* CARDS */}
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-
           {services.map((service, index) => (
-
             <motion.div
               key={service.title}
               initial={{
@@ -191,9 +210,7 @@ export default function Services() {
               </p>
 
               <div className="mt-8 space-y-3">
-
                 {service.conditions.map((condition) => (
-
                   <div
                     key={condition}
                     className="flex items-center gap-3"
@@ -204,9 +221,7 @@ export default function Services() {
                       {condition}
                     </span>
                   </div>
-
                 ))}
-
               </div>
 
               <div
@@ -221,13 +236,9 @@ export default function Services() {
                   blur-[100px]
                 "
               />
-
             </motion.div>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );
