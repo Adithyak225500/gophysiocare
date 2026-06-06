@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://gophysiocare.com/sitemap.xml",
+    sitemap: "https://gophysiocare.in/sitemap.xml",
   };
 }
