@@ -149,6 +149,7 @@ export default function Services() {
       <div className="absolute bottom-0 right-0 w-[700px] h-[700px] bg-yellow-400/10 blur-[220px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
+
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -175,19 +176,13 @@ export default function Services() {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Link
-              href={service.link}
               key={service.title}
+              href={service.link}
               className="block"
             >
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 80,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
                   duration: 0.8,
@@ -206,8 +201,8 @@ export default function Services() {
                   bg-white/5
                   backdrop-blur-2xl
                   p-8
-                  shadow-[0_0_50px_rgba(255,215,0,0.08)]
                   h-full
+                  shadow-[0_0_50px_rgba(255,215,0,0.08)]
                 "
               >
                 <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300" />
@@ -242,23 +237,11 @@ export default function Services() {
                 <div className="mt-8 text-yellow-400 font-semibold">
                   Learn More →
                 </div>
-
-                <div
-                  className="
-                    absolute
-                    -bottom-20
-                    left-1/2
-                    -translate-x-1/2
-                    w-[250px]
-                    h-[250px]
-                    bg-yellow-500/10
-                    blur-[100px]
-                  "
-                />
               </motion.div>
             </Link>
           ))}
         </div>
+
       </div>
     </section>
   );
