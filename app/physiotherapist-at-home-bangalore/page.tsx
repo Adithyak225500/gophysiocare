@@ -1,4 +1,4 @@
-import ServicePageTemplate from "@/components/ServicePageTemplate";
+import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Physiotherapist At Home Bangalore | GoPhysioCare",
