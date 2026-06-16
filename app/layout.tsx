@@ -59,8 +59,60 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Physiotherapy",
+
+    name: "GoPhysioCare",
+
+    url: "https://gophysiocare.in",
+
+    telephone: "+918747912575",
+
+    description:
+      "Premium Home Physiotherapy Services Across Bangalore.",
+
+    areaServed: {
+      "@type": "City",
+      name: "Bangalore",
+    },
+
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Bangalore",
+      addressRegion: "Karnataka",
+      addressCountry: "IN",
+    },
+
+    founder: {
+      "@type": "Person",
+      name: "Dr. Gowri",
+    },
+
+    medicalSpecialty: [
+      "Orthopedic Physiotherapy",
+      "Neuro Rehabilitation",
+      "Sports Physiotherapy",
+      "Stroke Rehabilitation",
+      "Home Physiotherapy",
+    ],
+
+    sameAs: [
+      "https://www.instagram.com/gophysiocare",
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
+      </head>
+
       <body>{children}</body>
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Services() {
@@ -7,6 +8,7 @@ export default function Services() {
     {
       icon: "🦴",
       title: "Orthopedic Rehabilitation",
+      link: "/back-pain-treatment-bangalore",
       subtitle: "Restore movement, reduce pain and regain confidence.",
       conditions: [
         "Cervical Pain",
@@ -21,9 +23,11 @@ export default function Services() {
         "CTEV",
       ],
     },
+
     {
       icon: "🧠",
       title: "Neuro Rehabilitation",
+      link: "/neuro-rehabilitation-bangalore",
       subtitle: "Helping patients regain independence and function.",
       conditions: [
         "Stroke Rehabilitation",
@@ -37,9 +41,11 @@ export default function Services() {
         "Bell's Palsy",
       ],
     },
+
     {
       icon: "👶",
       title: "Pediatric Physiotherapy",
+      link: "#",
       subtitle:
         "Supporting children in achieving optimal movement, development and independence.",
       conditions: [
@@ -53,9 +59,11 @@ export default function Services() {
         "Developmental Delay",
       ],
     },
+
     {
       icon: "👩",
       title: "Women's Health & Postpartum Care",
+      link: "#",
       subtitle:
         "Supporting recovery, strength and confidence after childbirth.",
       conditions: [
@@ -67,9 +75,11 @@ export default function Services() {
         "Pregnancy Related Pain",
       ],
     },
+
     {
       icon: "🏥",
       title: "Post-Surgery Rehabilitation",
+      link: "/post-surgical-rehabilitation-bangalore",
       subtitle: "Guided recovery after surgery and trauma.",
       conditions: [
         "ACL Reconstruction",
@@ -80,9 +90,11 @@ export default function Services() {
         "Shoulder Surgery Recovery",
       ],
     },
+
     {
       icon: "🏃",
       title: "Sports Rehabilitation",
+      link: "/sports-physiotherapy-bangalore",
       subtitle: "Return stronger, faster and safer.",
       conditions: [
         "Sports Injuries",
@@ -93,9 +105,11 @@ export default function Services() {
         "Injury Prevention",
       ],
     },
+
     {
       icon: "❤️",
       title: "Cardio-Pulmonary Rehabilitation",
+      link: "#",
       subtitle:
         "Improving endurance, breathing and functional capacity.",
       conditions: [
@@ -107,9 +121,11 @@ export default function Services() {
         "Endurance Conditioning",
       ],
     },
+
     {
       icon: "💧",
       title: "Hydrotherapy & Advanced Therapies",
+      link: "/dry-needling-bangalore",
       subtitle:
         "Evidence-based treatments for faster recovery.",
       conditions: [
@@ -128,13 +144,9 @@ export default function Services() {
       id="services"
       className="relative bg-black py-36 overflow-hidden"
     >
-      {/* GOLD LIGHTS */}
-
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-yellow-500/10 blur-[250px]" />
 
       <div className="absolute bottom-0 right-0 w-[700px] h-[700px] bg-yellow-400/10 blur-[220px]" />
-
-      {/* HEADER */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
@@ -160,83 +172,91 @@ export default function Services() {
           </p>
         </motion.div>
 
-        {/* CARDS */}
-
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <motion.div
+            <Link
+              href={service.link}
               key={service.title}
-              initial={{
-                opacity: 0,
-                y: 80,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.8,
-                delay: index * 0.1,
-              }}
-              whileHover={{
-                y: -12,
-                scale: 1.02,
-              }}
-              className="
-                relative
-                overflow-hidden
-                rounded-[35px]
-                border
-                border-white/10
-                bg-white/5
-                backdrop-blur-2xl
-                p-8
-                shadow-[0_0_50px_rgba(255,215,0,0.08)]
-              "
+              className="block"
             >
-              <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300" />
-
-              <div className="text-5xl mb-6">
-                {service.icon}
-              </div>
-
-              <h3 className="text-white text-2xl font-bold">
-                {service.title}
-              </h3>
-
-              <p className="text-gray-400 mt-4">
-                {service.subtitle}
-              </p>
-
-              <div className="mt-8 space-y-3">
-                {service.conditions.map((condition) => (
-                  <div
-                    key={condition}
-                    className="flex items-center gap-3"
-                  >
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full" />
-
-                    <span className="text-gray-300">
-                      {condition}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              <div
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 80,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.8,
+                  delay: index * 0.1,
+                }}
+                whileHover={{
+                  y: -12,
+                  scale: 1.02,
+                }}
                 className="
-                  absolute
-                  -bottom-20
-                  left-1/2
-                  -translate-x-1/2
-                  w-[250px]
-                  h-[250px]
-                  bg-yellow-500/10
-                  blur-[100px]
+                  relative
+                  overflow-hidden
+                  rounded-[35px]
+                  border
+                  border-white/10
+                  bg-white/5
+                  backdrop-blur-2xl
+                  p-8
+                  shadow-[0_0_50px_rgba(255,215,0,0.08)]
+                  h-full
                 "
-              />
-            </motion.div>
+              >
+                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300" />
+
+                <div className="text-5xl mb-6">
+                  {service.icon}
+                </div>
+
+                <h3 className="text-white text-2xl font-bold">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-400 mt-4">
+                  {service.subtitle}
+                </p>
+
+                <div className="mt-8 space-y-3">
+                  {service.conditions.map((condition) => (
+                    <div
+                      key={condition}
+                      className="flex items-center gap-3"
+                    >
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full" />
+
+                      <span className="text-gray-300">
+                        {condition}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-8 text-yellow-400 font-semibold">
+                  Learn More →
+                </div>
+
+                <div
+                  className="
+                    absolute
+                    -bottom-20
+                    left-1/2
+                    -translate-x-1/2
+                    w-[250px]
+                    h-[250px]
+                    bg-yellow-500/10
+                    blur-[100px]
+                  "
+                />
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
