@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
 
-    // MAIN SERVICE PAGES
+    // SERVICE PAGES
 
     {
       url: `${baseUrl}/home-physiotherapy-bangalore`,
@@ -136,6 +136,111 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     {
       url: `${baseUrl}/home-physiotherapy-hebbal`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-jp-nagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-yelahanka`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-bellandur`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-marathahalli`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-banashankari`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-basavanagudi`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-electronic-city`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-btm-layout`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-rr-nagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-vijayanagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-sadashivanagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-kalyan-nagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-rt-nagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-sanjay-nagar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/home-physiotherapy-nagarbhavi`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
