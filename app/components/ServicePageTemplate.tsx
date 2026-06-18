@@ -38,6 +38,7 @@ export default function ServicePageTemplate({
             <a
               href="https://wa.me/918747912575"
               target="_blank"
+              rel="noopener noreferrer"
               className="border border-yellow-500 px-6 py-3 rounded-xl"
             >
               WhatsApp
@@ -52,24 +53,38 @@ export default function ServicePageTemplate({
       <section className="max-w-6xl mx-auto px-6 py-20">
 
         <h2 className="text-4xl font-bold mb-8">
-          Expert Physiotherapy At Home
+          Professional Home Physiotherapy Services In Bangalore
         </h2>
 
-        <p className="text-lg leading-8 text-gray-700">
-          GoPhysioCare provides professional physiotherapy and rehabilitation
-          services directly at your doorstep across Bangalore. Our experienced
-          physiotherapists assess, diagnose and create personalized treatment
-          plans tailored to your condition. Whether you are recovering from
-          surgery, suffering from chronic pain, neurological conditions, sports
-          injuries or mobility issues, our goal is to restore movement,
-          improve function and help you return to daily activities safely.
-        </p>
+        <div className="space-y-6 text-lg leading-8 text-gray-700">
 
-        <p className="text-lg leading-8 text-gray-700 mt-6">
-          We bring hospital-quality rehabilitation services to the comfort of
-          your home, eliminating travel difficulties and ensuring continuous
-          recovery under expert supervision.
-        </p>
+          <p>
+            GoPhysioCare provides expert physiotherapy and rehabilitation
+            services directly at your doorstep across Bangalore. Our treatment
+            approach focuses on reducing pain, restoring movement, improving
+            strength and helping patients return to their normal lifestyle.
+          </p>
+
+          <p>
+            Every patient receives a detailed assessment followed by a
+            personalized treatment plan. Our goal is not only pain relief but
+            long-term recovery and prevention of future problems.
+          </p>
+
+          <p>
+            We provide orthopedic rehabilitation, neurological rehabilitation,
+            stroke rehabilitation, Parkinson's rehabilitation, sports injury
+            management, post-surgical rehabilitation, dry needling therapy and
+            home exercise programs.
+          </p>
+
+          <p>
+            Home physiotherapy is ideal for elderly patients, post-operative
+            recovery, neurological conditions and individuals who prefer
+            receiving treatment in a comfortable environment.
+          </p>
+
+        </div>
 
       </section>
 
@@ -90,6 +105,44 @@ export default function ServicePageTemplate({
               {condition}
             </div>
           ))}
+        </div>
+
+      </section>
+
+      {/* TREATMENT PROCESS */}
+
+      <section className="bg-zinc-50 py-20">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <h2 className="text-4xl font-bold mb-10">
+            Our Treatment Process
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-6">
+
+            <div className="border rounded-xl p-6 bg-white">
+              <h3 className="font-bold text-xl mb-3">Assessment</h3>
+              <p>Detailed evaluation of pain, movement and mobility.</p>
+            </div>
+
+            <div className="border rounded-xl p-6 bg-white">
+              <h3 className="font-bold text-xl mb-3">Diagnosis</h3>
+              <p>Identification of the root cause and rehabilitation goals.</p>
+            </div>
+
+            <div className="border rounded-xl p-6 bg-white">
+              <h3 className="font-bold text-xl mb-3">Treatment</h3>
+              <p>Customized therapy and rehabilitation program.</p>
+            </div>
+
+            <div className="border rounded-xl p-6 bg-white">
+              <h3 className="font-bold text-xl mb-3">Recovery</h3>
+              <p>Progress tracking and return to daily activities.</p>
+            </div>
+
+          </div>
+
         </div>
 
       </section>
@@ -136,9 +189,51 @@ export default function ServicePageTemplate({
 
       </section>
 
-      {/* WHY CHOOSE */}
+      {/* WHO NEEDS PHYSIOTHERAPY */}
 
       <section className="py-20">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <h2 className="text-4xl font-bold mb-10">
+            Who Can Benefit From Physiotherapy?
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+
+            <div className="border rounded-xl p-6">
+              Patients suffering from back pain and neck pain
+            </div>
+
+            <div className="border rounded-xl p-6">
+              Stroke rehabilitation patients
+            </div>
+
+            <div className="border rounded-xl p-6">
+              Parkinson's disease patients
+            </div>
+
+            <div className="border rounded-xl p-6">
+              Sports injury recovery
+            </div>
+
+            <div className="border rounded-xl p-6">
+              Post surgery rehabilitation
+            </div>
+
+            <div className="border rounded-xl p-6">
+              Elderly individuals with mobility difficulties
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* WHY CHOOSE */}
+
+      <section className="py-20 bg-zinc-50">
 
         <div className="max-w-6xl mx-auto px-6">
 
@@ -191,20 +286,21 @@ export default function ServicePageTemplate({
           <div className="grid md:grid-cols-4 gap-4">
 
             <Link href="/home-physiotherapy-malleshwaram">Malleshwaram</Link>
-
             <Link href="/home-physiotherapy-rajajinagar">Rajajinagar</Link>
-
             <Link href="/home-physiotherapy-indiranagar">Indiranagar</Link>
-
             <Link href="/home-physiotherapy-whitefield">Whitefield</Link>
-
             <Link href="/home-physiotherapy-koramangala">Koramangala</Link>
-
             <Link href="/home-physiotherapy-hsr-layout">HSR Layout</Link>
-
             <Link href="/home-physiotherapy-jayanagar">Jayanagar</Link>
-
             <Link href="/home-physiotherapy-hebbal">Hebbal</Link>
+            <Link href="/home-physiotherapy-rr-nagar">RR Nagar</Link>
+            <Link href="/home-physiotherapy-yelahanka">Yelahanka</Link>
+            <Link href="/home-physiotherapy-marathahalli">Marathahalli</Link>
+            <Link href="/home-physiotherapy-bellandur">Bellandur</Link>
+            <Link href="/home-physiotherapy-electronic-city">Electronic City</Link>
+            <Link href="/home-physiotherapy-banashankari">Banashankari</Link>
+            <Link href="/home-physiotherapy-jp-nagar">JP Nagar</Link>
+            <Link href="/home-physiotherapy-basavanagudi">Basavanagudi</Link>
 
           </div>
 
@@ -225,42 +321,33 @@ export default function ServicePageTemplate({
           <div className="space-y-8">
 
             <div>
-              <h3 className="font-bold text-xl">
-                Do you provide physiotherapy at home?
-              </h3>
-              <p className="mt-2">
-                Yes, we provide home physiotherapy services across Bangalore.
-              </p>
+              <h3 className="font-bold text-xl">Do you provide physiotherapy at home?</h3>
+              <p className="mt-2">Yes, we provide home physiotherapy services across Bangalore.</p>
             </div>
 
             <div>
-              <h3 className="font-bold text-xl">
-                Which areas do you cover?
-              </h3>
-              <p className="mt-2">
-                We serve major areas including Malleshwaram, Rajajinagar,
-                Whitefield, Indiranagar, Hebbal, Jayanagar and surrounding
-                locations.
-              </p>
+              <h3 className="font-bold text-xl">Which areas do you cover?</h3>
+              <p className="mt-2">We cover major areas across Bangalore including RR Nagar, Whitefield, Hebbal, HSR Layout and more.</p>
             </div>
 
             <div>
-              <h3 className="font-bold text-xl">
-                How do I book an appointment?
-              </h3>
-              <p className="mt-2">
-                You can call us directly or contact us through WhatsApp.
-              </p>
+              <h3 className="font-bold text-xl">How do I book an appointment?</h3>
+              <p className="mt-2">You can call us directly or contact us through WhatsApp.</p>
             </div>
 
             <div>
-              <h3 className="font-bold text-xl">
-                Do you treat neurological conditions?
-              </h3>
-              <p className="mt-2">
-                Yes, we provide stroke rehabilitation, Parkinson’s
-                rehabilitation and neuro physiotherapy services.
-              </p>
+              <h3 className="font-bold text-xl">Do you treat neurological conditions?</h3>
+              <p className="mt-2">Yes, we provide stroke rehabilitation, Parkinson's rehabilitation and neuro physiotherapy services.</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl">How many sessions will I need?</h3>
+              <p className="mt-2">The number of sessions depends on your condition and recovery goals.</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl">Do you provide treatment for senior citizens?</h3>
+              <p className="mt-2">Yes, we provide geriatric physiotherapy and mobility rehabilitation.</p>
             </div>
 
           </div>
@@ -284,6 +371,7 @@ export default function ServicePageTemplate({
         <a
           href="https://wa.me/918747912575"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-block mt-8 bg-yellow-500 text-black px-8 py-4 rounded-xl font-semibold"
         >
           Book On WhatsApp
